@@ -1205,10 +1205,36 @@ footer .ftr-address a:hover {
 	color: #0092b7;
 }
 
-
-
-
-
+footer .ftr-con {
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid #EFEFEF;
+}
+footer .ftr-end {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer .ftr-end > a {
+	font-size: 14px;
+	line-height: 32px;
+	color: #B5B5B5;
+}
+footer .ftr-end > a:hover {
+	text-decoration: underline;
+}
+footer .ftr-end p {
+	font-size: 14px;
+	line-height: 32px;
+	color: #B5B5B5;
+}
+footer .ftr-end .ftr-dev .dev-site {
+	font-size: 14px;
+	line-height: 32px;
+	color: #B5B5B5;
+	margin-right: 10px;
+}
 
 
 
