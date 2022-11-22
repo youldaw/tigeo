@@ -116,7 +116,10 @@
 											<a class="nav-link" href="#">КОНТАКТЫ</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link basket-link" href="#"><img src="images/basket-icon.svg" alt=""> 3 333 119 ₽</a>
+											<a class="nav-link basket-link" href="#">
+												<img src="images/basket-icon.svg" alt=""> 
+												<span>3 333 119 ₽</span>
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -131,7 +134,7 @@
 			<section class="main-sec">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-3 pr-10">
+						<div class="col-lg-3 pr-10 main-left-col">
 							<div class="main-sidebar">
 								<form action="#!" id="side-form">
 									<p>Оставьте заявку, мы детально изучим особенности Вашего проекта и подберем оптимальное решение исходя из задач и бюджета</p>
@@ -158,7 +161,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-9 pl-10">
+						<div class="col-lg-9 pl-10 main-right-col">
 							<div class="main-content">
 								<nav aria-label="breadcrumb">
 									<ol class="breadcrumb">
@@ -229,7 +232,7 @@
 										</div>
 									</div>
 
-									<div class="col-lg-7">
+									<div class="col-lg-7 product-col">
 										<div class="product-info">
 											<div class="product-info-item">
 												<img src="images/product-info-icon1.svg" alt="">
@@ -293,6 +296,14 @@
 												<a href="#!"><img src="images/whatsapp-icon.png" alt=""></a>
 											</div>
 										</div>
+
+										<div class="compare mob">
+											<a href="#!" class="compare-icon"><img src="images/compare-icon.svg" alt=""></a>
+											<div class="compare-text">
+												<p>Сравнить</p>
+												<a href="#!">Перейти к сравнению</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -301,11 +312,14 @@
 								<div class="title">
 									<h2>Рекомендованные аксессуары</h2>
 								</div>
-								<div class="row">
-									<div class="col-lg-4 pr-10">
+								<div class="row recommend-rov">
+									<div class="col-xl-4 col-lg-6 col-md-6 col-6 pr-10">
 										<div class="recommend-block">
 											<div class="recommend-img">
 												<img src="images/product-img.jpg" alt="">
+											</div>
+											<div class="recommend-price mob">
+												<p>В наличии</p>
 											</div>
 											<div class="recommend-name">
 												<h5>Алюминиевый штатив RGK S6-D со сферической площадкой</h5>
@@ -319,10 +333,13 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 pr-10">
+									<div class="col-xl-4 col-lg-6 col-md-6 col-6 pr-10">
 										<div class="recommend-block">
 											<div class="recommend-img">
 												<img src="images/product-img.jpg" alt="">
+											</div>
+											<div class="recommend-price mob">
+												<p>В наличии</p>
 											</div>
 											<div class="recommend-name">
 												<h5>Алюминиевый штатив RGK S6-D со сферической площадкой</h5>
@@ -336,10 +353,13 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 pr-10">
+									<div class="col-xl-4 col-lg-6 col-md-6 col-6 pr-10 pc">
 										<div class="recommend-block">
 											<div class="recommend-img">
 												<img src="images/product-img.jpg" alt="">
+											</div>
+											<div class="recommend-price mob">
+												<p>В наличии</p>
 											</div>
 											<div class="recommend-name">
 												<h5>Алюминиевый штатив RGK S6-D со сферической площадкой</h5>
@@ -359,13 +379,31 @@
 							<div class="main-description">
 								<nav>
 									<div class="nav nav-tabs" id="nav-tab" role="tablist">
-									  <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button" role="tab" aria-controls="nav-one" aria-selected="true">Описание и комплектация</button>
-									  <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button" role="tab" aria-controls="nav-two" aria-selected="false">Технические характеристики</button>
-									  <button class="nav-link" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false">Документация</button>
+									  <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button" role="tab" aria-controls="nav-one" aria-selected="true">
+										Описание и комплектация
+										<img src="images/dropdow-arrow.svg" alt="">
+									</button>
+									  <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button" role="tab" aria-controls="nav-two" aria-selected="false">
+										Технические характеристики
+										<img src="images/dropdow-arrow.svg" alt="">
+									</button>
+									  <button class="nav-link" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false">
+										Документация
+										<img src="images/dropdow-arrow.svg" alt="">
+									</button>
 
-									  <button class="nav-link" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" type="button" role="tab" aria-controls="nav-four" aria-selected="false">Видеообзор</button>
-									  <button class="nav-link" id="nav-five-tab" data-bs-toggle="tab" data-bs-target="#nav-five" type="button" role="tab" aria-controls="nav-five" aria-selected="false">Аксессуары</button>
-									  <button class="nav-link" id="nav-six-tab" data-bs-toggle="tab" data-bs-target="#nav-six" type="button" role="tab" aria-controls="nav-six" aria-selected="false">Оплата и доставка по РФ и СНГ</button>
+									  <button class="nav-link" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" type="button" role="tab" aria-controls="nav-four" aria-selected="false">
+										Видеообзор
+										<img src="images/dropdow-arrow.svg" alt="">
+									</button>
+									  <button class="nav-link" id="nav-five-tab" data-bs-toggle="tab" data-bs-target="#nav-five" type="button" role="tab" aria-controls="nav-five" aria-selected="false">
+										Аксессуары
+										<img src="images/dropdow-arrow.svg" alt="">
+									</button>
+									  <button class="nav-link" id="nav-six-tab" data-bs-toggle="tab" data-bs-target="#nav-six" type="button" role="tab" aria-controls="nav-six" aria-selected="false">
+										Оплата и доставка по РФ и СНГ
+										<img src="images/dropdow-arrow.svg" alt="">
+									</button>
 									</div>
 								</nav>
 								<div class="tab-content" id="nav-tabContent">
@@ -373,12 +411,21 @@
 										<div class="tab-one">
 											<p>Тахеометр Trimble S5 5’‘ Robotic DR Plus оснащен сервоприводами, которые в сочетании с технологией Robotic позволяют выполнять измерения в автоматизированном режиме. Благодаря этому, вы можете выполнять задачи по съемке местности без помощника. Кроме того, прибор использует для работы такие технологии как MagDrive, SurePoint и другие, которые обеспечивают точность и автоматизацию процесса.</p>
 											<div class="row">
-												<div class="col-lg-6 pr-10 tab-list-col">
+												<div class="col-lg-6 col-md-6 pr-10 tab-list-col">
 													<div class="tab-one-info tab-one-text">
 														<img src="images/description-icon.svg" alt="">
 														<p>Бесплатное обучение использованию оборудования в офисе в Москве в течение 1 дня</p>
 													</div>
-
+												</div>
+												<div class="col-lg-6 col-md-6 pl-10 tab-list-col">
+													<div class="tab-two-info tab-one-text">
+														<img src="images/description-icon2.svg" alt="">
+														<p>Бесплатная техническая поддержка на весь срок эксплуатации оборудования</p>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-6 col-md-6 pr-10 tab-list-col">
 													<div class="tab-list">
 														<div class="tab-list-in">
 															<h5>Комплектация</h5>
@@ -398,11 +445,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-6 pl-10 tab-list-col">
-													<div class="tab-two-info tab-one-text">
-														<img src="images/description-icon2.svg" alt="">
-														<p>Бесплатная техническая поддержка на весь срок эксплуатации оборудования</p>
-													</div>
+												<div class="col-lg-6 col-md-6 pl-10 tab-list-col">
 													<div class="tab-list">
 														<div class="tab-list-in">
 															<h5>Основные характеристики</h5>
@@ -773,7 +816,7 @@
 							<div class="ftr-catalog">
 								<p>Каталог оборудования</p>
 								<div class="row">
-									<div class="col-lg-6">
+									<div class="col-xl-6 col-lg-4">
 										<div class="ftr-menu">
 											<a href="#!">Электронные тахеометры</a>
 											<a href="#!">Лазерные сканеры / Системы лазерного сканирования</a>
@@ -785,7 +828,7 @@
 											<a href="#!">Модемы для GNSS приемников</a>
 										</div>
 									</div>
-									<div class="col-lg-3">
+									<div class="col-xl-3 col-lg-4 ftr-center">
 										<div class="ftr-menu">
 											<a href="#!">Приборы вертикального проектирования</a>
 											<a href="#!">Квадранты</a>
@@ -798,7 +841,7 @@
 											<a href="#!">Софт</a>
 										</div>
 									</div>
-									<div class="col-lg-3">
+									<div class="col-xl-3 col-lg-4">
 										<div class="ftr-menu">
 											<a href="#!">Аренда</a>
 											<a href="#!">Выкуп и Trade-in</a>
@@ -846,7 +889,7 @@
 							<span class="ftr-icon"><img src="images/ftr-home-icon.svg" alt=""></span>
 							<p>Головное подразделение: <br> Москва, Москва, Амурская <br> 9/6 строение 9</p>
 						</div>
-						<div class="ftr-address">
+						<div class="ftr-address two">
 							<span class="ftr-icon"><img src="images/ftr-home-icon.svg" alt=""></span>
 							<a href="#!">Представительства в регионах</a>
 						</div>
