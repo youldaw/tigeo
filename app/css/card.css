@@ -1183,6 +1183,16 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 992px) {
+	header {
+		overflow: hidden;
+		transition: .5s all ease;
+	}
+	.header .header-nav {
+		transition: .5s all ease;
+	}
+	.wrapper {
+		margin-bottom: 60px;
+	}
 	.margin-for-header {
 		margin-top: 0;
 	}
@@ -1203,10 +1213,6 @@ input[type=number] {
 	.swiper-slide .col-lg-12 {
 		width: 100%;
 	}
-    header {
-        position: relative !important;
-        top: 0 !important;
-    }
     .main-sec {
         margin-top: 0;
     }

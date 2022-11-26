@@ -471,14 +471,6 @@ $(function () {
     $(this).toggleClass('active')
   })
 
-  $('.mob-m').on('click', function (e) {
-    e.preventDefault();
-    $('.header-nav').css('right', '0');
-  });
-
-  $('.header-cross').on('click', function (e) {
-    $('.header-nav').css('right', '-120%');
-  });
 
   $('.search-btn').on('click', function (e) {
     e.preventDefault();
