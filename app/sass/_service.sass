@@ -1,0 +1,83 @@
+.service
+  padding-top: 80px
+  &__sibtitle
+    br
+      display: none
+  &-list
+    display: flex
+    margin-top: 40px
+    gap: 20px
+    &__item
+      display: flex
+      flex-direction: column
+      background-color: #fff
+      border-radius: 0px 0px 8px 8px
+      flex-grow: 1
+    &__img
+      border-radius: 8px 8px 0px 0px
+      overflow: hidden
+      height: 500px
+      img
+        height: 100%
+        width: 100%
+        object-fit: cover
+        transition: all, .3s linear
+    &__block
+      padding: 20px 30px
+  h4
+    font-weight: 600
+    font-size: 22px
+    line-height: 27px
+    br
+      display: none
+  &-link
+    margin-top: 10px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    color: #53C5E2
+    display: flex
+    align-items: center
+    transition: all, .3s
+    img
+      transition: all, .3s
+
+@media (max-width: 1200px)
+  .service
+    &-list
+      &__img
+        height: 400px
+
+@media (max-width: 992px)
+  .service
+    h4
+      font-weight: 600
+      font-size: 16px
+      line-height: 110%
+    &-list
+      &__block
+        padding: 10px
+
+@media (max-width: 767px)
+  .service
+    &-list
+      flex-wrap: wrap
+      &:last-child
+        flex-basis: 100%
+      &__img
+        height: 280px
+
+@media (max-width: 576px)
+  .service
+    padding-top: 60px
+    &-list
+      &__img
+        height: 202px
+      &__item
+        flex-basis: 40%
+    h4
+      br
+        display: block
+    &__sibtitle
+      br
+        display: block

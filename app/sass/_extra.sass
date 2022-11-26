@@ -1,0 +1,107 @@
+.extra
+  position: relative
+  background: linear-gradient(100.12deg, #BCA59F 0.79%, #CFBEBA 99.2%)
+  margin-top: 80px
+  padding-top: 80px
+  padding-bottom: 80px
+  &-bg
+    position: absolute
+    bottom: 0
+    left: 0
+    max-width: 1110px
+  &-bg2
+    display: none
+  &-img
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: 2
+  &__title
+    color: #fff
+  &-list
+    position: relative
+    margin-top: 40px
+    max-width: 900px
+    display: flex
+    margin-top: 40px
+    gap: 20px
+    &__block
+      margin-top: 20px
+    &__item
+      padding: 30px
+      display: flex
+      flex-direction: column
+      background-color: #fff
+      border-radius: 8px
+      flex-grow: 1
+    &__img
+      border-radius: 8px
+      overflow: hidden
+      height: 260px
+      img
+        height: 100%
+        width: 100%
+        object-fit: cover
+        transition: all, .3s linear
+  h4
+    font-weight: 600
+    font-size: 22px
+    line-height: 27px
+    br
+      display: none
+  &-link
+    margin-top: 10px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    color: #53C5E2
+    display: flex
+    align-items: center
+    transition: all, .3s
+    img
+      transition: all, .3s
+
+@media (max-width: 1300px)
+  .extra
+    &-img
+      max-width: 33%
+
+@media (max-width: 1200px)
+  .extra
+    &-list
+      max-width: 776px
+
+@media (max-width: 992px)
+  .extra
+    padding-bottom: 0
+    &-img
+      margin-top: 27px
+      position: relative
+      margin-left: auto
+    &-list
+      max-width: 100%
+
+@media (max-width: 767px)
+  .extra
+    &-img
+      min-width: 312px
+    &-list
+      &__img
+        height: 192px
+      &__item
+        padding: 10px
+    h4
+      font-size: 16px
+      line-height: 110%
+
+@media (max-width: 576px)
+  .extra
+    padding-top: 60px
+    margin-top: 60px
+    &-bg
+      display: none
+    &-bg2
+      display: block
+      position: absolute
+      bottom: 0
+      max-width: 380px

@@ -1,0 +1,476 @@
+.header
+  position: fixed
+  width: 100%
+  z-index: 50
+  background-color: #fff
+  transition: all, .3s
+  &-cross
+    display: none
+  &-mob
+    display: none
+  &-nav
+    background-color: $blue
+    &__w
+      display: flex
+      justify-content: space-between
+      color: #fff
+  &-basket
+    display: flex
+    gap: 10px
+    align-items: center
+    font-weight: 600
+    cursor: pointer
+    img
+      transition: all, .15s
+  &-list
+    display: flex
+    align-items: center
+    gap: 48px
+    li
+      position: relative
+      &:first-child
+        & .drop-list
+          width: 558px
+
+  &-top
+    background: #BCA59F
+    color: #fff
+    transition: all, .75s
+    &__w
+      padding: 10px 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__block
+      display: flex
+      align-items: center
+      gap: 30px
+    &__list
+      display: flex
+      align-items: center
+      gap: 30px
+      a
+        transition: all, .3s
+        position: relative
+        &::before
+          position: absolute
+          content: ''
+          background-color: #fff
+          width: 0
+          height: 1px
+          bottom: -3px
+          transition: all, .3s
+
+    &__place
+      position: relative
+      font-size: 14px
+      line-height: 17px
+      padding-left: 34px
+      &::before
+        position: absolute
+        content: ''
+        background-image: url('../images/icons/home.svg')
+        background-repeat: no-repeat
+        background-size: contain
+        width: 24px
+        height: 24px
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+  &-mail
+    padding-left: 31px
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      background-image: url('../images/icons/mail.svg')
+      background-repeat: no-repeat
+      background-size: contain
+      width: 24px
+      height: 24px
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+    &::after
+      position: absolute
+      content: ''
+      background-color: #fff
+      width: 0
+      height: 1px
+      bottom: -3px
+      transition: all, .3s
+      left: 0
+  &-main
+    &__w
+      padding: 20px 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &-search
+    min-height: 50px
+    display: flex
+    align-items: center
+    position: relative
+    background: #FFFFFF
+    border: 1px solid #DBDDE0
+    border-radius: 4px
+    width: 100%
+    max-width: 300px
+    transition: all, .3s
+    button
+      position: absolute
+      border: none
+      cursor: pointer
+      background-color: transparent
+      right: 10px
+      top: 10px
+      img
+        transition: all, .1s
+    input
+      padding-left: 15px
+      padding-right: 15px
+      width: 100%
+      border: none
+  &-list
+    display: flex
+    align-items: center
+    a
+      display: flex
+      align-items: center
+      transition: all, .3s
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        background-color: #fff
+        width: 0
+        height: 1px
+        bottom: -3px
+        transition: all, .3s
+    img
+      display: inline
+
+.search-cross
+  display: none
+
+.mob
+  &-list
+    display: flex
+    gap: 15px
+    align-items: center
+    a
+      display: flex
+      align-items: center
+      flex-direction: column
+      gap: 4px
+  &-menu
+    padding-top: 8px
+    padding-bottom: 8px
+    position: fixed
+    display: none
+    justify-content: center
+    color: #111
+    bottom: 0
+    width: 100%
+    z-index: 4
+    background-color: #fff
+
+.drop
+  padding: 18px 0
+  &::before
+    display: none
+  svg
+    transition: all, .3s
+  &-list2
+    position: absolute
+    background-color: #fff
+    border-radius: 0 4px 4px 0
+    top: 0
+    padding: 30px !important
+    left: 100%
+    font-size: 14px
+    line-height: 24px
+    color: #414042
+    min-width: 485px
+    opacity: 0
+    visibility: hidden
+    transition: all, .3s
+    height: 100%
+    &__item
+      transition: all, .3s
+  &-list
+    min-width: 263px
+    top: 60px
+    position: absolute
+    padding: 30px !important
+    padding-right: 0 !important
+    background: #53C5E2
+    border-radius: 0 0 0 4px
+    opacity: 0
+    visibility: hidden
+    transition: all, .3s
+    &__arrow
+      transition: all, .3s
+    &__item
+      padding-right: 30px
+      position: static !important
+      display: flex
+      align-items: center
+      justify-content: space-between
+      cursor: pointer
+      font-size: 14px
+      line-height: 24px
+      padding-bottom: 2px
+      span
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+      img
+        transition: all, .3s
+      &--tasks
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        color: #FFFFFF
+        margin-bottom: 20px
+        & .drop-list2
+          font-weight: 600
+          font-size: 14px
+          line-height: 24px
+          color: #414042
+          a
+            width: max-content
+
+.contacts-i
+  margin-top: 5px
+  a
+    font-weight: 600
+    font-size: 22px
+    line-height: 27px
+    transition: all, .3s
+  p
+    padding-top: 4px
+    font-size: 14px
+    line-height: 17px
+
+.social
+  display: flex
+  gap: 10px
+  &-item
+    a
+      border-radius: 4px
+      width: 50px
+      height: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: all, .3s
+    &.tg
+      a
+        background: #39BCFF
+    &.w
+      a
+        background: #4EC85C
+
+@media (max-width: 1400px)
+  .header
+    &-main
+      &__w
+        padding: 12px 0
+
+@media (max-width: 1300px)
+  .header
+    &-search
+      max-width: 190px
+    &-btn
+      max-width: max-content
+    &-list
+      gap: 20px
+      font-size: 13px
+  .contacts-i
+    a
+      font-size: 19px
+      line-height: 23px
+  .logo
+    font-size: 12px
+
+@media (max-width: 992px)
+  .header-search
+    input
+      background-color: transparent
+      outline: none
+  .header-nav
+    min-height: 100vh
+    overflow-y: auto
+  .search-cross
+    display: block
+    position: absolute
+    top: 10px
+    right: 10px
+  .drop-list
+    transition: none
+    display: none
+    opacity: 1
+    visibility: visible
+    position: static
+    width: 100% !important
+    padding: 0 !important
+    padding-left: 10px !important
+    background-color: transparent
+    &__arrow
+      path
+        fill: #414042
+    &__item
+      font-size: 13px
+      flex-direction: column
+      &:last-child
+        margin-bottom: 0
+      &--tasks
+        color: inherit
+        margin-bottom: 0
+        font-size: 13px
+      span
+        &.active
+          & .drop-list__arrow
+            transform: rotate(90deg)
+  .mob-menu
+    display: flex
+    z-index: 100
+  .header
+    &-cross
+      display: block
+      position: absolute
+      top: 10px
+      right: 10px
+    &-search
+      &--mob
+        position: absolute
+        top: -150%
+        transition: all, .3s
+        width: 97vw
+        padding: 20px 0
+        background-color: #fff
+        & .header-search
+          margin-left: auto
+          margin-right: auto
+          max-width: 300px
+    &-top
+      &__place
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        &::before
+          background-image: url('../images/icons/house-black.svg')
+      &__block
+        flex-direction: column
+        align-items: flex-start
+        padding-bottom: 30px
+        gap: 14px
+      &__list
+        flex-direction: column
+        align-items: flex-start
+        font-weight: 400
+        gap: 13px
+        font-size: 14px
+        line-height: 17px
+    &-mail
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
+      &::before
+        background-image: url('../images/icons/mail-black.svg')
+    &-mob
+      padding-top: 30px !important
+      display: flex
+      flex-direction: column
+    &-list
+      width: 100%
+      gap: 20px
+      font-size: 13px
+      flex-direction: column
+      align-items: flex-start
+      gap: 10px
+      padding-bottom: 30px !important
+      border-bottom: 1px solid #DBDDE0
+      li
+        width: 100%
+        align-items: flex-start
+      a
+        justify-content: space-between
+        padding: 0
+        width: 100%
+    &-nav
+      padding-top: 45px
+      position: absolute
+      right: -150%
+      transition: all, .3s
+      top: 0
+      background: #F6F6F6
+      &__w
+        color: #414042
+        font-weight: 600
+        font-size: 16px
+        line-height: 130%
+        color: #414042
+        flex-direction: column
+        max-height: 100vh
+        overflow-y: auto
+        & .header-btn
+          max-width: 240px
+          margin-bottom: 40px
+          margin-top: 20px
+        & .contacts-i
+          margin-bottom: 12px
+          padding-top: 30px
+          border-top: 1px solid #DBDDE0
+          p
+            font-weight: 400
+    &-basket
+      display: none
+    &-top
+      &__w
+        display: none
+    &-nav
+      position: absolute
+      width: 100%
+    &-main
+      &__t
+        font-size: 14px
+      &__w
+        & .social,
+        & .contacts-i,
+        & .header-btn
+          display: none
+  .drop-arrow
+    transform: rotate(-90deg)
+    path
+      fill: #414042
+  .drop-list2
+    display: none
+    position: static
+    opacity: 1
+    visibility: visible
+    background-color: transparent
+    padding: 0 !important
+    min-width: auto
+    font-size: 13px !important
+    padding-left: 20px !important
+    transition: none
+  .drop.active
+    & .drop-arrow
+      transform: rotate(0deg)
+
+@media (max-width: 420px)
+  .header-search--mob
+    & .header-search
+      margin-left: 0
+      max-width: 270px
+
+@media (max-width: 380px)
+  .header
+    &-main
+      &__t
+        font-size: 12px
+  .mob-menu
+    font-size: 12px

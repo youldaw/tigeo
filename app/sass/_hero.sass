@@ -1,0 +1,217 @@
+.hero
+  margin-top: 210px
+  position: relative
+  overflow: hidden
+  &-info
+    position: relative
+    z-index: 4
+  &-slide
+    &__img
+      img
+        height: 100%
+        object-fit: cover
+  &-slider
+    width: 100vw
+    height: 100%
+    position: relative
+    div
+      height: 100%
+  &-slide
+    &__img
+      position: absolute
+      width: 100vw
+      height: 100%
+      object-fit: cover
+  &-wrap
+    padding-top: 9%
+    min-height: calc(100vh - 210px)
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    position: relative
+    padding-left: 85px
+    &::before
+      position: absolute
+      content: ''
+      background: linear-gradient(270deg, #F9F9F9 32.98%, rgba(231, 225, 224, 0) 63.23%)
+      width: 100%
+      height: 100vh
+      left: -26%
+      top: 0
+      z-index: 1
+      transform: matrix(-1, 0, 0, 1, 0, 0)
+  &__title
+    font-weight: 600
+    font-size: 44px
+    line-height: 110%
+    color: #414042
+  &__text
+    margin-top: 20px
+    font-size: 22px
+    line-height: 130%
+  &__btn
+    margin-top: 30px
+  &-list
+    margin-top: 50px
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+    gap: 10px
+    position: relative
+    z-index: 4
+    li
+      position: relative
+      font-weight: 500
+      font-size: 18px
+      line-height: 22px
+      padding: 10px 30px 10px 10px
+      display: flex
+      align-items: center
+      gap: 10px
+      background: #FFFFFF
+      border-radius: 4px
+      img
+        transition: all, .3s
+      &::before
+        position: absolute
+        content: ''
+        top: -1px
+        bottom: -1px
+        left: -1px
+        right: -1px
+        background: linear-gradient(-52deg,#BCA59F 0%, #FFFFFF 31.36%, #FFFFFF 64.49%, #BCA59F 100%)
+        border-radius: 4px
+        transition: all, .3s
+        z-index: -1
+  &-arrows
+    position: absolute
+    display: flex
+    justify-content: space-between
+    max-width: 1300px
+    width: 100%
+    z-index: 5
+    left: 50%
+    top: 44%
+    transform: translate(-50%, -50%)
+  &-arrow
+    background: #E7E1E0
+    border-radius: 4px
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: all, .3s
+  &-a
+    transition: all, .3s
+    path
+      transition: all, .3s
+  & .slick-dots
+    position: absolute
+    bottom: 60px
+    z-index: 5
+    display: flex
+    gap: 8px
+    right: calc((100vw - 1300px) / 2)
+    button
+      padding: 0 !important
+      outline: none
+      font-size: 0
+      background: #FFFFFF
+      border-radius: 2px
+      width: 16px
+      height: 16px
+      transition: all, .3s
+      border: none
+      cursor: pointer
+    & .slick-active
+      button
+        background: #BCA59F
+
+@media (max-width: 1600px)
+  .hero
+    &-wrap
+      padding-top: 2%
+
+@media (max-width: 1400px)
+  .hero
+    margin-top: 180px
+    &-list
+      margin-top: 30px
+    &__text
+      font-size: 18px
+    &-wrap
+      min-height: calc(100vh - 180px)
+
+@media (max-width: 1350px)
+  .hero
+    &__title
+      font-size: 34px
+    &-arrows
+      max-width: 98vw
+    & .slick-dots
+      right: 20px
+
+@media (max-width: 1300px)
+  .hero
+    &-list
+      li
+        font-size: 15px
+        padding: 10px
+        img
+          width: 50px
+
+@media (max-width: 992px)
+  .hero
+    margin-top: 94px
+    &-arrows
+      margin-top: 20px
+      display: flex
+      gap: 14px
+      align-items: center
+      justify-content: center
+      position: static
+      transform: none
+    &-slide
+      &__img
+        height: 120%
+    &-wrap
+      min-height: auto
+      padding-left: 0
+      padding-top: 64px
+      padding-bottom: 68px
+      &::before
+        left: -15px
+    &__title
+      font-size: 32px
+      line-height: 110%
+    &__text
+      font-size: 16px
+      line-height: 130%
+      br
+        display: none
+    &-list
+      flex-direction: column
+      align-items: flex-start
+      margin-bottom: 0
+      li
+        width: 100%
+        max-width: 400px
+        font-size: 14px
+        img
+          width: 60px
+    & .slick-dots
+      right: auto
+      bottom: 22px
+      left: 15px
+
+@media (max-width: 992px)
+  .hero
+    &-wrap
+      padding-top: 25px
+      padding-bottom: 58px
+    &-list
+      li
+        img
+          width: 45px

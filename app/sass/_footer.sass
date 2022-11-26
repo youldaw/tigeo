@@ -1,0 +1,135 @@
+.footer
+  margin-top: 80px
+  background-color: #fff
+  &-m
+    display: none
+  &-main
+    border-bottom: 1px solid #EFEFEF
+  &-wrapper
+    padding-top: 50px
+    display: flex
+  &-nav
+    &__w
+      display: flex
+    &__title
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
+    &__list
+      margin-top: 33px
+      margin-right: 48px
+      li
+        margin-bottom: 24px
+        font-size: 16px
+        transition: all, .3s
+  & .logo
+    height: 70px
+    margin-right: 44px
+  &-w
+    margin-bottom: 20px
+    h4
+      margin-bottom: 12px
+      font-weight: 600
+      font-size: 18px
+      line-height: 26px
+    p
+      padding-top: 13px
+  & .social
+    margin-top: 12px
+    &-item a
+      width: 40px
+      height: 40px
+      img
+        padding: 10px
+  &-list
+    a
+      transition: all, .3s
+    p
+      padding-left: 34px
+      margin-bottom: 25px
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        background-image: url('../images/icons/house-black.svg')
+        background-repeat: no-repeat
+        background-size: contain
+        width: 25px
+        height: 25px
+        left: 0
+        top: -2px
+      &:last-child
+        &::before
+          background-image: url('../images/icons/mail-black.svg')
+  &-btn
+    transition: all, .3s
+    color: $blue
+    cursor: pointer
+  &-bottom
+    color: #B5B5B5
+    font-size: 14px
+    line-height: 32px
+    &__w
+      padding-top: 20px
+      padding-bottom: 20px
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &-agency
+    display: flex
+    gap: 10px
+    align-items: center
+  &-conf
+    cursor: pointer
+    transition: all, .3s
+
+@media (max-width: 1300px)
+  .footer
+    &-wrapper
+      justify-content: space-between
+    &-nav
+      &__list
+        margin-right: 20px
+        li
+          font-size: 15px
+
+@media (max-width: 1150px)
+  .footer
+    & .logo
+      margin-right: 20px
+    &-bottom
+      font-size: 11px
+
+@media (max-width: 992px)
+  .footer
+    &-m
+      display: block
+      font-weight: 600
+      font-size: 16px
+      line-height: 20px
+    &-nav
+      display: none
+    &-wrapper
+      flex-direction: column
+      gap: 20px
+      width: max-content
+      margin-left: auto
+      margin-right: auto
+    &-bottom
+      &__w
+        flex-direction: column
+        align-items: flex-start
+        width: max-content
+        margin-left: auto
+        margin-right: auto
+
+@media (max-width: 576px)
+  .footer
+    &-wrapper
+      margin-left: 0
+    &-bottom
+      &__w
+        margin-left: 0
+    &-agency
+      flex-direction: column
+      align-items: flex-start

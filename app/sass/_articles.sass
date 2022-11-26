@@ -1,0 +1,162 @@
+.articles
+  padding-top: 80px
+  position: relative
+  &-wrapper
+    display: flex
+    margin-top: 40px
+  & .slick-track
+    width: max-content !important
+  & .slick-slide
+    padding: 10px
+    transition: all, .3s
+  & .slick-list
+    margin-left: -10px
+    margin-right: -10px
+  &-item
+    padding: 30px
+    position: relative
+    background-color: #fff
+    border-radius: 8px
+    &::before
+      position: absolute
+      content: ''
+      top: -1px
+      bottom: -1px
+      left: -1px
+      right: -1px
+      background: linear-gradient(-52deg,#BCA59F 0%, #FFFFFF 31.36%, #FFFFFF 64.49%, #BCA59F 100%)
+      border-radius: 8px
+      transition: all, .3s
+      z-index: -1
+  &-img
+    height: 300px
+    display: block
+    border-radius: 8px
+    overflow: hidden
+    transition: all, .3s
+    img
+      height: 100%
+      transition: all, .3s
+      width: 100%
+      object-fit: cover
+  & .slick-current
+    min-width: 660px !important
+    & .articles-img
+      transition: all, .3s
+      img
+        transition: all, .3s
+    h3
+      font-size: 22px
+      line-height: 27px
+    p
+      margin-top: 20px
+      font-size: 18px
+      line-height: 130%
+      max-height: 46px
+    & .articles-link
+      margin-top: 19px
+  &-item
+    h3
+      margin-top: 30px
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
+    p
+      font-size: 14px
+      line-height: 130%
+      margin-top: 16px
+      max-height: 36px
+      overflow: hidden
+  &-link
+    margin-top: 17px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    color: #53C5E2
+    display: flex
+    align-items: center
+    transition: all, .3s
+    img
+      transition: all, .3s
+  &-arrows
+    position: absolute
+    display: flex
+    justify-content: space-between
+    max-width: 1360px
+    width: 100%
+    z-index: 5
+    left: 50%
+    top: auto
+    bottom: 39%
+    transform: translate(-50%, -50%)
+  &-arrow
+    background: #E7E1E0
+    border-radius: 4px
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: all, .3s
+  &-a
+    transition: all, .3s
+    path
+      transition: all, .3s
+
+@media (max-width: 1300px)
+  .articles
+    & .slick-current
+      min-width: 1px !important
+      h3
+        margin-top: 30px
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+      p
+        font-size: 14px
+        line-height: 130%
+        margin-top: 16px
+        max-height: 36px
+        overflow: hidden
+    &-arrow
+      transform: scale(.8)
+      &--prev
+        left: 5px
+      &--next
+        right: 5px
+
+@media (max-width: 576px)
+  .articles
+    & .slick-current
+      h3
+        font-size: 16px
+        line-height: 110%
+        margin-top: 10px
+    &__title
+      br
+        display: none
+    &-arrows
+      margin-top: 20px
+      display: flex
+      gap: 14px
+      align-items: center
+      justify-content: center
+      position: static
+      transform: none
+    &-arrow
+      position: static
+      transform: scale(1)
+    &-item
+      padding: 10px
+    &-img
+      height: 192px
+    h3
+      font-size: 16px
+      line-height: 110%
+      margin-top: 10px
+    p
+      margin-top: 12px !important
+      max-height: 54px !important
+    &-link
+      margin-top: 12px !important

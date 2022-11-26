@@ -1,0 +1,131 @@
+.reviews
+  padding-top: 80px
+  & .container
+    position: relative
+  &-wrap
+    margin-top: 40px
+    & .slick-slide
+      padding-left: 10px
+      padding-right: 10px
+    & .slick-list
+      margin-left: -10px
+      margin-right: -10px
+  &-v
+    height: 490px
+    position: relative
+    border-radius: 4px
+    overflow: hidden
+    &::before
+      position: absolute
+      content: ''
+      background-image: url("../images/icons/video.svg")
+      background-repeat: no-repeat
+      background-size: cover
+      width: 70px
+      height: 70px
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      transition: all, .3s
+    video
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-i
+    height: 490px
+    position: relative
+    border-radius: 4px
+    overflow: hidden
+    &::before
+      position: absolute
+      content: ''
+      background-image: url("../images/icons/slider-zoom.svg")
+      background-repeat: no-repeat
+      background-size: cover
+      width: 70px
+      height: 70px
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      transition: all, .3s
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-text
+    margin-top: 20px
+    font-size: 18px
+    line-height: 130%
+    color: #414042
+  &-arrows
+    z-index: 5
+  &-arrow
+    position: absolute
+    background: #E7E1E0
+    border-radius: 4px
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: all, .3s
+    &--next
+      right: -10px
+      top: 310px
+      z-index: 5
+    &--prev
+      left: -10px
+      top: 310px
+      z-index: 5
+  &-a
+    transition: all, .3s
+    path
+      transition: all, .3s
+
+@media (max-width: 1350px)
+  .reviews
+    &-arrow
+      transform: scale(.8)
+      &--prev
+        left: 5px
+      &--next
+        right: 5px
+
+@media (max-width: 767px)
+  .reviews
+    &-text
+      margin-top: 12px
+      font-size: 14px
+      line-height: 130%
+      br
+        display: none
+
+@media (max-width: 576px)
+  .reviews
+    padding-top: 60px
+    &-wrap
+      margin-top: 30px
+    &-arrows
+      margin-top: 20px
+      display: flex
+      gap: 14px
+      align-items: center
+      justify-content: center
+      position: static
+      transform: none
+    &-arrow
+      position: static
+      transform: scale(1)
+    &-v,
+    &-i
+      height: 300px
+      &::before
+        width: 30px
+        height: 30px
+
+@media (max-width: 420px)
+  .reviews
+    &-v,
+    &-i
+      height: 270px
