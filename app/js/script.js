@@ -85,6 +85,39 @@ $(function (){
           prevEl: '.accessory-button-prev'
       }
     });
+
+    const swiper6 = new Swiper('.similar-slide', {
+      // Default parameters
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 10,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView:1
+        },
+        480: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 3
+        },
+        990: {
+          slidesPerView: 3
+        },
+        1200: {
+          slidesPerView: 2.3
+        },
+        1400: {
+          slidesPerView: 3
+        }
+      },
+      navigation: {
+          nextEl: '.similar-button-next',
+          prevEl: '.similar-button-prev'
+      }
+    });
   
     $('.nav-tabs .nav-link').on('click',function(e){
       e.preventDefault();
