@@ -969,6 +969,9 @@ header {
 	color: #414042;
 	margin-top: 20px;
 }
+.geodetic-block a:hover .geodetic-text {
+	color: #53C5E2;
+}
 /* catalog accessory */
 .cat-accessory .cat-accessory-block > a {
 	display: block;
