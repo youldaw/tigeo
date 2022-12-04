@@ -118,6 +118,30 @@ $(function (){
           prevEl: '.similar-button-prev'
       }
     });
+
+
+    var swiper = new Swiper(".slide-date", {
+      loop: false,
+      spaceBetween: 10,
+      slidesPerView: 6,
+      freeMode: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".date-button-next",
+        prevEl: ".date-button-prev",
+      },
+    });
+    var swiper2 = new Swiper(".slide-images", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper2-button-next",
+        prevEl: ".swiper2-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    }); 
+   
   
     $('.nav-tabs .nav-link').on('click',function(e){
       e.preventDefault();
