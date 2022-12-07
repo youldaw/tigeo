@@ -720,6 +720,13 @@
         <a href="#!" class="whatsapp"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
       </div>
 
+      <div class="fixed-calc">
+          <a href="#!" class="fixed-calc-btn">
+              <img src="images/icons/calc-icon.svg" alt="">
+              <span>Калькулятор аренды</span>
+          </a>
+      </div>
+
       <section class="rent-sec margin-for-header for-all">
         <div class="container">
           <div class="row">
@@ -1087,46 +1094,171 @@
                               <ul>
                                 <li><a href="#">Главная</a></li>
                                 <li><a href="#">Каталог</a></li>
-                                <li><span>Аренда оборудования</span></li>
+                                <li><span>Аренда тахеометров</span></li>
                               </ul>
                           </div>
                       </div>
                   </div>
       
                   <div class="row">
-                      <div class="col-lg-8">
+                      <div class="col-lg-7">
                           <div class="rent-text rent-block">
                               <div class="title">
-                                  <h2>Аренда оборудования</h2>
-                                  <p>Решайте стоящие перед вами задачи без траты средств на покупку дорогостоящего оборудования</p>
+                                  <h2>Аренда <br> Тахеометров</h2>
+                                  <p>Всегда большой выбор инструментов для всевозможных задач. Технические, инженерные или роботизированные. Возьми тахеометр на несколько дней или месяцев и выполни в срок поставленные задачи.</p>
                               </div>
-                              <div class="rent-img rent-block for-mob">
-                                <img src="images/rent-img.jpg" alt="">
-                              </div>
-                              <div class="rent-list">
+                              <div class="for-pc">
+                                <div class="rent-list">
                                   <ul>
                                       <li>Всегда в наличии на складе</li>
                                       <li>Оборудование исправно и имеет свидетельство о поверке</li>
                                       <li>Быстрая доставка в любую точку РФ</li>
                                   </ul>
-                              </div>
-                              <div class="service-center-social rent-social">
-                                  <a href="#!" class="btn-main">Получить консультацию</a>
-                                  <p>Задать вопрос в мессенджеры</p>
-                                  <ul class="social">
-                                    <li class="social-item tg">
-                                      <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
-                                    </li>
-                                    <li class="social-item w">
-                                      <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
-                                    </li>
-                                  </ul>
+                                </div>
+                                <div class="service-center-social rent-social">
+                                    <a href="#!" class="btn-main">Получить консультацию</a>
+                                    <p>Задать вопрос в мессенджеры</p>
+                                    <ul class="social">
+                                      <li class="social-item tg">
+                                        <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                      </li>
+                                      <li class="social-item w">
+                                        <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                      </li>
+                                    </ul>
+                                </div>
                               </div>
                           </div>
                       </div>
-                      <div class="col-lg-4">
-                          <div class="rent-img rent-block for-pc">
-                              <img src="images/rent-img.jpg" alt="">
+                      <div class="col-lg-5">
+                          <div class="rent-calc step-one active">
+                              <div class="calc-title">
+                                  <h3>Калькулятор аренды</h3>
+                                  <p>Шаг 1 из 2</p>
+                              </div>
+                              <form action="#!">
+                                  <div class="row">
+                                      <div class="col-lg-6 pr-10">
+                                          <div class="form-group">
+                                              <span>Производитель *</span>
+                                              <select name="rent-calc" id="rent-calc">
+                                                  <option value="Leica">Leica</option>
+                                                  <option value="Leica2">Leica2</option>
+                                                  <option value="Leica3">Leica3</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-6 pl-10">
+                                          <div class="form-group">
+                                              <span>Модель*</span>
+                                              <select name="rent-calc" id="rent-calc">
+                                                  <option value="Leica TCR 800">Leica TCR 800</option>
+                                                  <option value="Leica TCR 8002">Leica TCR 8002</option>
+                                                  <option value="Leica TCR 8003">Leica TCR 8003</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-6 pr-10">
+                                          <div class="form-group">
+                                              <span>ИНН</span>
+                                              <input type="text" id="inn">
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-6 pl-10">
+                                          <div class="form-group">
+                                              <span>Итоговая сумма, ₽</span>
+                                              <input type="text" id="total">
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <p>Минимальный срок аренды - 3 дня.</p>
+                                  <h4>Добавить аксессуары</h4>
+                                  <label class="cta-label">
+                                      <input type="checkbox" required checked class="cta-checkbox">
+                                      <p>Штатив, веха, отражатель</p>
+                                  </label>
+                                  <div class="form-btn">
+                                      <a href="#!" class="btn-main calc-next">Вперед <img src="images/icons/white-arrow.svg" alt=""></a>
+                                  </div>
+                              </form>
+                          </div>
+
+                          <div class="rent-calc step-two">
+                              <div class="calc-title">
+                                  <h3>Калькулятор аренды</h3>
+                                  <p>Шаг 2 из 2</p>
+                              </div>
+                              <form action="#!">
+                                  <div class="row">
+                                      <div class="col-lg-6 pr-10">
+                                          <div class="form-group">
+                                              <span>Имя *</span>
+                                              <input type="text" name="calc-name" id="calc-name" required>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-6 pl-10">
+                                          <div class="form-group">
+                                              <span>E-mail*</span>
+                                              <input type="email" name="calc-email" id="calc-email" required>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-6 pr-10">
+                                          <div class="form-group">
+                                              <span>Количество дней*</span>
+                                              <input type="number" name="amount-days" id="amount-days" required>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-6 pl-10">
+                                          <div class="form-group">
+                                              <span>Телефон*</span>
+                                              <input type="tel" name="phone" id="phone" required>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <label class="cta-label">
+                                      <input type="checkbox" required checked class="cta-checkbox">
+                                      <p>Даю свое согласие на обработку персональных данных</p>
+                                  </label>
+                                  <div class="service-center-social calc-social">
+                                      <p>Задать вопрос в мессенджеры</p>
+                                      <ul class="social">
+                                        <li class="social-item tg">
+                                          <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                        </li>
+                                        <li class="social-item w">
+                                          <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                        </li>
+                                      </ul>
+                                  </div>
+                                  <div class="form-btn">
+                                      <a href="#!" class="calc-back"><img src="images/icons/white-arrow.svg" alt=""> Назад <br> уточнить детали</a>
+                                      <button type="submit" class="btn-main">Оставить заявку</button>
+                                  </div>
+                              </form>
+                          </div>
+
+                          <div class="for-mob">
+                            <div class="rent-list">
+                              <ul>
+                                  <li>Всегда в наличии на складе</li>
+                                  <li>Оборудование исправно и имеет свидетельство о поверке</li>
+                                  <li>Быстрая доставка в любую точку РФ</li>
+                              </ul>
+                            </div>
+                            <div class="service-center-social rent-social">
+                                <a href="#!" class="btn-main">Получить консультацию</a>
+                                <p>Задать вопрос в мессенджеры</p>
+                                <ul class="social">
+                                  <li class="social-item tg">
+                                    <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                  </li>
+                                  <li class="social-item w">
+                                    <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                  </li>
+                                </ul>
+                            </div>
                           </div>
                       </div>
                   </div>
@@ -1581,20 +1713,8 @@
                   </div>
 
                   <div class="rent-end-text">
-                      <p>Аренда геодезического оборудования — это услуга, которая позволяет получить во временное пользование точное измерительное оборудование без затрат на его приобретение. Если строительная или геодезическая компания не может купить товар нужной модели, она имеет возможность арендовать его и быстро выполнить необходимые работы. Мы предоставляем в аренду современное геодезическое оборудование с документами о поверке. У нас вы можете получить устройства без оформления большого пакета документов и с минимальными затратами.</p>
-                      <p>В сравнении с приобретением геодезического оборудования его <span>аренда имеет следующие плюсы:</span></p>
-                      <div class="rent-end-in">
-                          <span>1</span>
-                          <p>Не нужно тратить много денег. Аренда позволяет оптимизировать использование оборотных средств и не покупать измерительные приборы, если они нужны время от времени или в зависимости от сезона.</p>
-                      </div>
-                      <div class="rent-end-in">
-                          <span>2</span>
-                          <p>Нет необходимости оформлять кредит. Аренда дает возможность получить приборы для использования компаниям, у которых недостаточно денег на приобретение. В этом случае не нужно будет оформлять кредит в банке для покупки.</p>
-                      </div>
-                      <div class="rent-end-in">
-                          <span>3</span>
-                          <p>Можно выбирать инструмент под конкретные задачи. Специалисты могут подобрать более точный и современный прибор, который в противном случае они бы не смогли использовать из-за дороговизны.</p>
-                      </div>
+                      <p>Тахеометры используются при проведении геодезических изысканий и во время строительных работ для определения угловых расстояний между точками и измерения линейных расстояний от реперной точки до вешки. Современные электронные устройства позволяют выполнять измерения на удалении до нескольких километров с миллиметровой погрешностью. Однако использовать их не всегда возможно, так как купить товар этого типа могут позволить себе далеко не все геодезические компании.</p>
+                      <p>Если приобрести измерительные приборы компания не хочет или не может, оптимальным вариантом будет аренда тахеометра. Стоимость этой услуги намного меньше, чем затраты на приобретение инструментов. Но благодаря аренде можно в течение дня получить тахеометр с нужными характеристиками и выполнить планируемый объем работ.</p>
                   </div>
               </div>
 
@@ -1779,17 +1899,17 @@
                 <p>Пн-Пт: с 9:30 до 19:00 <br> Сб: с 10:00 до 15:00</p>
                 </div>
                 <ul class="social">
-              <li class="social-item tg">
-                <a href="#">
-                  <img src="images/icons/tg.svg" alt="icon">
-                </a>
-              </li>
-              <li class="social-item w">
-                <a href="#">
-                  <img src="images/icons/w.svg" alt="icon">
-                </a>
-              </li>
-            </ul>
+                    <li class="social-item tg">
+                        <a href="#">
+                        <img src="images/icons/tg.svg" alt="icon">
+                        </a>
+                    </li>
+                    <li class="social-item w">
+                        <a href="#">
+                        <img src="images/icons/w.svg" alt="icon">
+                        </a>
+                    </li>
+                </ul>
               </div>
               <div class="footer-w">
                 <h4>Сервис и техподдержка:</h4>
