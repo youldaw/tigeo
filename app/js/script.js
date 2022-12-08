@@ -88,7 +88,7 @@ $(function (){
 
     const swiper6 = new Swiper('.similar-slide', {
       // Default parameters
-      loop: true,
+      loop: false,
       slidesPerView: 4,
       spaceBetween: 10,
       // Responsive breakpoints
@@ -107,7 +107,7 @@ $(function (){
           slidesPerView: 3
         },
         1200: {
-          slidesPerView: 2.3
+          slidesPerView: 3
         },
         1400: {
           slidesPerView: 3
@@ -188,7 +188,6 @@ $(function (){
     });
 
 
-
     $('select').each(function(){
       var $this = $(this), numberOfOptions = $(this).children('option').length;
     
@@ -237,4 +236,9 @@ $(function (){
   
 });
   
-  
+document.querySelectorAll('.add-to-cart').forEach(button => {
+  button.addEventListener('click', e => {
+      button.classList.toggle('added');
+  });
+});
+
