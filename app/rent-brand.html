@@ -740,7 +740,7 @@
         <a href="#!" class="whatsapp"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
       </div>
 
-      <div class="fixed-calc">
+      <div class="fixed-calc-brand rent-brand">
           <a href="#!" class="fixed-calc-btn" data-bs-toggle="modal" data-bs-target="#calc-form-modal">
               <img src="images/icons/calc-icon.svg" alt="">
               <span>Калькулятор аренды</span>
@@ -1132,6 +1132,15 @@
                                   </div>
                                 </li>
                                 <li><span>Аренда тахеометров</span></li>
+                                <li class="active relative drop-container">
+                                    <span>Leica <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                    <div class="drop">
+                                      <ul class="drop-menu">
+                                        <li><a href="#">Leica2</a></li>
+                                        <li><a href="#">Leica3</a></li>
+                                      </ul>
+                                    </div>
+                                  </li>
                               </ul>
                           </div>
                       </div>
@@ -1142,190 +1151,8 @@
                           <div class="rent-text rent-block">
                               <div class="title">
                                   <h2>Аренда <br> Тахеометров</h2>
-                                  <p>Всегда большой выбор инструментов для всевозможных задач. Технические, инженерные или роботизированные. Возьми тахеометр на несколько дней или месяцев и выполни в срок поставленные задачи.</p>
-                              </div>
-                              <div class="for-pc">
-                                <div class="rent-list">
-                                  <ul>
-                                      <li>Всегда в наличии на складе</li>
-                                      <li>Оборудование исправно и имеет свидетельство о поверке</li>
-                                      <li>Быстрая доставка в любую точку РФ</li>
-                                  </ul>
-                                </div>
-                                <div class="service-center-social rent-social">
-                                    <a href="#!" class="btn-main" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить консультацию</a>
-                                    <p>Задать вопрос в мессенджеры</p>
-                                    <ul class="social">
-                                      <li class="social-item tg">
-                                        <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
-                                      </li>
-                                      <li class="social-item w">
-                                        <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
-                                      </li>
-                                    </ul>
-                                </div>
                               </div>
                           </div>
-                      </div>
-                      <div class="col-xl-5 col-lg-12">
-                          <div class="rent-calc step-one active">
-                              <div class="calc-title">
-                                  <h3>Калькулятор аренды</h3>
-                                  <p>Шаг 1 из 2</p>
-                              </div>
-                              <form action="#!">
-                                  <div class="row">
-                                      <div class="col-lg-6 pr-10">
-                                          <div class="form-group">
-                                              <span>Производитель *</span>
-                                              <select name="rent-calc" id="rent-calc">
-                                                  <option value="Leica">Leica</option>
-                                                  <option value="Leica2">Leica2</option>
-                                                  <option value="Leica3">Leica3</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                      <div class="col-lg-6 pl-10">
-                                          <div class="form-group">
-                                              <span>Модель*</span>
-                                              <select name="rent-calc" id="rent-calc">
-                                                  <option value="Leica TCR 800">Leica TCR 800</option>
-                                                  <option value="Leica TCR 8002">Leica TCR 8002</option>
-                                                  <option value="Leica TCR 8003">Leica TCR 8003</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                      <div class="col-lg-6 pr-10">
-                                          <div class="form-group">
-                                              <span>ИНН</span>
-                                              <input type="text" id="inn">
-                                          </div>
-                                      </div>
-                                      <div class="col-lg-6 pl-10">
-                                          <div class="form-group">
-                                              <span>Итоговая сумма, ₽</span>
-                                              <input type="text" id="total">
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <p>Минимальный срок аренды - 3 дня.</p>
-                                  <h4>Добавить аксессуары</h4>
-                                  <label class="cta-label">
-                                      <input type="checkbox" required checked class="cta-checkbox">
-                                      <p>Штатив, веха, отражатель</p>
-                                  </label>
-                                  <div class="form-btn">
-                                      <a href="#!" class="btn-main calc-next">Вперед <img src="images/icons/white-arrow.svg" alt=""></a>
-                                  </div>
-                              </form>
-                          </div>
-
-                          <div class="rent-calc step-two">
-                              <div class="calc-title">
-                                  <h3>Калькулятор аренды</h3>
-                                  <p>Шаг 2 из 2</p>
-                              </div>
-                              <form action="#!">
-                                  <div class="row">
-                                      <div class="col-lg-6 pr-10">
-                                          <div class="form-group">
-                                              <span>Имя *</span>
-                                              <input type="text" name="calc-name" id="calc-name" required>
-                                          </div>
-                                      </div>
-                                      <div class="col-lg-6 pl-10">
-                                          <div class="form-group">
-                                              <span>E-mail*</span>
-                                              <input type="email" name="calc-email" id="calc-email" required>
-                                          </div>
-                                      </div>
-                                      <div class="col-lg-6 pr-10">
-                                          <div class="form-group">
-                                              <span>Количество дней*</span>
-                                              <input type="number" name="amount-days" id="amount-days" required>
-                                          </div>
-                                      </div>
-                                      <div class="col-lg-6 pl-10">
-                                          <div class="form-group">
-                                              <span>Телефон*</span>
-                                              <input type="tel" name="phone" id="phone" required>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <label class="cta-label">
-                                      <input type="checkbox" required checked class="cta-checkbox">
-                                      <p>Даю свое согласие на обработку персональных данных</p>
-                                  </label>
-                                  <div class="service-center-social calc-social">
-                                      <p>Задать вопрос в мессенджеры</p>
-                                      <ul class="social">
-                                        <li class="social-item tg">
-                                          <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
-                                        </li>
-                                        <li class="social-item w">
-                                          <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
-                                        </li>
-                                      </ul>
-                                  </div>
-                                  <div class="form-btn">
-                                      <a href="#!" class="calc-back"><img src="images/icons/white-arrow.svg" alt=""> Назад <br> уточнить детали</a>
-                                      <button type="submit" class="btn-main" data-bs-toggle="modal" data-bs-target="#calc-modal">Оставить заявку</button>
-                                  </div>
-                              </form>
-                          </div>
-
-                          <div class="for-mob">
-                            <div class="rent-list">
-                              <ul>
-                                  <li>Всегда в наличии на складе</li>
-                                  <li>Оборудование исправно и имеет свидетельство о поверке</li>
-                                  <li>Быстрая доставка в любую точку РФ</li>
-                              </ul>
-                            </div>
-                            <div class="service-center-social rent-social">
-                                <a href="#!" class="btn-main">Получить консультацию</a>
-                                <p>Задать вопрос в мессенджеры</p>
-                                <ul class="social">
-                                  <li class="social-item tg">
-                                    <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
-                                  </li>
-                                  <li class="social-item w">
-                                    <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
-                                  </li>
-                                </ul>
-                            </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="rent-client">
-                      <div class="rent-title">
-                          <h2>Станьте нашим постоянным клиентом и пользуйтесь специальными привилегиями</h2>
-                      </div>
-
-                      <div class="client-block">
-                          <div class="client-item">
-                              <img src="images/icons/rent-client-icon1.svg" alt="">
-                              <p>Аренда <br> оборудования <br> БЕЗ залога</p>
-                          </div>
-                          <div class="client-item">
-                              <img src="images/icons/rent-client-icon2.svg" alt="">
-                              <p>Дополнительные <br> скидки <br> на аренду</p>
-                          </div>
-                          <div class="client-item">
-                              <img src="images/icons/rent-client-icon3.svg" alt="">
-                              <p>Бесплатный <br> подменный парк <br> на время ремонта</p>
-                          </div>
-                          <div class="client-item">
-                              <img src="images/icons/rent-client-icon4.svg" alt="">
-                              <p>Приоритетная <br> техподдержка и ремонт <br> в сервисе без очеридей</p>
-                          </div>
-                      </div>
-
-                      <div class="for-mob">
-                        <a href="#!" class="btn-main filters-mob">Фильтр</a>
                       </div>
                   </div>
 
