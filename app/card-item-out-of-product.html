@@ -756,13 +756,13 @@
                                     <textarea name="comment" id="comment" placeholder="Комментарий"></textarea>
                                 </div>
                                 <div class="side-form-send">
-                                    <button id="side-form-btn">Отправить заявку</button>
+                                    <button id="side-form-btn" data-bs-toggle="modal" data-bs-target="#thanks">Отправить заявку</button>
                                 </div>
                                 <div class="form-checkboxk">
                                     <label class="control control--checkbox">
                                         <input type="checkbox" checked="checked"/>
                                         <div class="control__indicator"></div>
-                                        <span>Оставляя заявку вы соглашаетесь с обработкой персональных данных</span>
+                                        <span>Оставляя заявку вы соглашаетесь с <a href="#!">обработкой персональных данных</a></span>
                                     </label>
                                 </div>
                             </form>
@@ -1799,6 +1799,37 @@
 
   <!-- Modal -->
   <div class="modal fade modal-thanks" id="thanks" tabindex="-1" aria-labelledby="thanksLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/modal-close.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="thanks-block">
+            <h3>Спасибо за вашу заявку!</h3>
+
+            <div class="thanks-text">
+              <p>Ожидайте звонка менеджера в рабочее время</p>
+            </div>
+            <div class="thanks-graphic">
+              <p><span>Пн-Пт:</span> с 9:30 до 19:00</p>
+              <p><span>Сб:</span> с 10:00 до 15:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thanks2">
+    Launch demo modal
+  </button> -->
+
+  <!-- Modal -->
+  <div class="modal fade modal-thanks" id="thanks2" tabindex="-1" aria-labelledby="thanksLabel2" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">

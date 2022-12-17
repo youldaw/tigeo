@@ -801,7 +801,7 @@
             <div class="hero-info">
             <h1 class="hero__title">Новинки недели</h1>
             <p class="hero__text">Новая линейка тахеометров Leica</p>
-            <button class="btn-main hero__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить консультацию</button>
+            <button class="btn-main hero__btn mt-6" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить консультацию</button>
           </div>
           <ul class="hero-list">
             <li>
@@ -1874,7 +1874,7 @@
             <form action="#" class="cta-form">
               <input required type="text" placeholder="Ваше имя" class="cta-input">
               <input required minlength="18" pattern=".{18,18}" type="tel" name="phone" placeholder="Ваш телефон" class="cta-input">
-              <button type="submit" class="btn-main cta-btn">Получить консультацию</button>
+              <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal" data-bs-target="#thanks">Получить консультацию</button>
               <label class="cta-label">
                 <input type="checkbox" required checked class="cta-checkbox">
                 <p>Оставляя заявку вы соглашаетесь <br> <a href="#!">с обработкой персональных данных</a></p>
@@ -2292,6 +2292,37 @@
 
   <!-- Modal -->
   <div class="modal fade modal-thanks" id="thanks" tabindex="-1" aria-labelledby="thanksLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/modal-close.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="thanks-block">
+            <h3>Спасибо за вашу заявку!</h3>
+
+            <div class="thanks-text">
+              <p>Ожидайте звонка менеджера в рабочее время</p>
+            </div>
+            <div class="thanks-graphic">
+              <p><span>Пн-Пт:</span> с 9:30 до 19:00</p>
+              <p><span>Сб:</span> с 10:00 до 15:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thanks2">
+    Launch demo modal
+  </button> -->
+
+  <!-- Modal -->
+  <div class="modal fade modal-thanks" id="thanks2" tabindex="-1" aria-labelledby="thanksLabel2" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">

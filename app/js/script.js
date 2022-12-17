@@ -36,6 +36,7 @@ $(function (){
 
     $('.pay-ship-more').on('click',function(e){
       e.preventDefault();
+      $(this).toggleClass('active');
       $(this).parent().toggleClass('active');
     });
 

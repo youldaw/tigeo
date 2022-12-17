@@ -788,7 +788,7 @@
                           </div>
                       </div>
                       <div class="service-center-social">
-                          <a href="#!" class="btn-main">Получить консультацию</a>
+                          <a href="#!" class="btn-main" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить консультацию</a>
                           <p>Задать вопрос в мессенджеры</p>
                           <ul class="social">
                             <li class="social-item tg">
@@ -1208,6 +1208,37 @@
 
   <!-- Modal -->
   <div class="modal fade modal-thanks" id="thanks" tabindex="-1" aria-labelledby="thanksLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/modal-close.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="thanks-block">
+            <h3>Спасибо за вашу заявку!</h3>
+
+            <div class="thanks-text">
+              <p>Ожидайте звонка менеджера в рабочее время</p>
+            </div>
+            <div class="thanks-graphic">
+              <p><span>Пн-Пт:</span> с 9:30 до 19:00</p>
+              <p><span>Сб:</span> с 10:00 до 15:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thanks2">
+    Launch demo modal
+  </button> -->
+
+  <!-- Modal -->
+  <div class="modal fade modal-thanks" id="thanks2" tabindex="-1" aria-labelledby="thanksLabel2" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
