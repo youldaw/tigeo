@@ -1410,11 +1410,12 @@ header {
 	margin-bottom: 60px;
 }
 .examine-sec .examine-social p {
+	margin-left: auto;
 	max-width: 132px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #414042;
-	margin-left: 20px;
+	margin-right: 20px;
 }
 .examine-sec .examine-video {
 	position: relative;
@@ -1526,6 +1527,9 @@ header {
 	line-height: 14px;
 	color: #FFFFFF;
 	display: inline-block;
+}
+.examine-form-block .control span a {
+	text-decoration: underline;
 }
 /* //// */
 .examine-service {
@@ -1715,6 +1719,10 @@ header {
 	font-size: 16px;
 	line-height: 18px;
 	color: #414042;
+}
+.service-center-social.keys-social p {
+	margin-left: auto;
+	margin-right: 20px;
 }
 .service-center-block {
 	height: 100%;
@@ -2987,6 +2995,14 @@ header {
 #calc-modal .modal-body form label {
 	margin-bottom: 20px;
 }
+.modal-body form label span {
+	font-size: 12px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+.modal-body form label span a {
+	text-decoration: underline;
+}
 /* ////// */
 
 .modal-social {
@@ -4146,6 +4162,7 @@ input[type=number] {
 	}
 	.examine-sec .examine-video {
 		margin-left: 0;
+		margin-bottom: 30px;
 	}
 	.filter {
 		min-height: auto;
@@ -4678,6 +4695,13 @@ input[type=number] {
 
 
 @media only screen and (max-width: 480px) {
+	.support-ser .service-center-social .btn-main,
+	.works-service .service-center-social .btn-main {
+		margin-top: 0;
+	}
+	.service-center-social.keys-social p {
+		margin-left: 0;
+	}
 	.examine-service {
 		padding-top: 0;
 		padding-bottom: 40px;
@@ -5036,9 +5060,6 @@ input[type=number] {
 	}
 	.rent-sec .rent-list {
 		margin-top: 30px;
-	}
-	.service-center-social p {
-		max-width: 100%;
 	}
 	.rent-client {
 		padding-top: 60px;
