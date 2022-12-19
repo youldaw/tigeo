@@ -4295,10 +4295,10 @@ input[type=number] {
 
 
 @media only screen and (max-width: 767px) {
-	.checkout-sec .pr-10 {
+	.checkout-sec .checkout-form .pr-10 {
 		padding-right: 15px !important;
 	}
-	.checkout-sec .pl-10 {
+	.checkout-sec .checkout-form .pr-10 {
 		padding-left: 15px !important;
 	}
 	.modal-body form label span {
