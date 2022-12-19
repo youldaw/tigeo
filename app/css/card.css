@@ -4249,6 +4249,9 @@ input[type=number] {
 		line-height: 130%;
 		color: #414042;
 	}
+	.nav-compare .compare-link:hover p {
+		color: #299AFB;
+	}
 	header {
 		overflow: hidden;
 		transition: .5s all ease;
