@@ -4295,6 +4295,7 @@ input[type=number] {
 
 
 @media only screen and (max-width: 767px) {
+	.checkout-sec form {display: block;}
 	.checkout-sec .checkout-form .pr-10 {
 		padding-right: 15px !important;
 	}
