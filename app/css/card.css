@@ -4296,10 +4296,10 @@ input[type=number] {
 
 @media only screen and (max-width: 767px) {
 	.checkout-sec .checkout-form .pr-10 {
-		padding-right: 15px;
+		padding-right: 15px !important;
 	}
 	.checkout-sec .checkout-form .pl-10 {
-		padding-left: 15px ;
+		padding-left: 15px !important;
 	}
 	.modal-body form label span {
 		line-height: 14px;
