@@ -4730,6 +4730,13 @@ input[type=number] {
 
 
 @media only screen and (max-width: 480px) {
+	.your-order .your-order-total h2 {
+		font-size: 22px;
+	}
+	.your-order-block .your-order-img span {
+		font-size: 14px;
+		max-width: 140px;
+	}
 	.support-ser .service-center-social .btn-main,
 	.works-service .service-center-social .btn-main {
 		margin-top: 0;
