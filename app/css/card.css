@@ -3004,7 +3004,7 @@ header {
 }
 .modal-body form label span {
 	font-size: 12px;
-	line-height: 24px;
+	line-height: 20px;
 	color: #FFFFFF;
 }
 .modal-body form label span a {
@@ -4292,6 +4292,9 @@ input[type=number] {
 
 
 @media only screen and (max-width: 767px) {
+	.modal-body form label span {
+		line-height: 14px;
+	}
 	.order-examine .order-examine-price h4 {
 		font-size: 20px;
 		line-height: 24px;
