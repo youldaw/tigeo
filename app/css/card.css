@@ -5339,4 +5339,10 @@ input[type=number] {
 	.service-center-social p {
 		max-width: 135px;
 	}
+	.similar-button-prev {
+		left: 34%;
+	}
+	.similar-button-next {
+		right: 34%;
+	}
 }
