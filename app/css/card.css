@@ -63,7 +63,8 @@ footer .contacts-i {
     height:50px;
     background-color:#39BCFF;
     text-indent:-9999px;
-    border-radius:4px
+    border-radius:4px;
+	z-index: 11;
 }
 #scroll-top img {
     position:absolute;
