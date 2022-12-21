@@ -35,6 +35,25 @@ a:hover{color: inherit}
 * Browsers: last 4 version
 */
 
+.reviews-i .rev-icon {
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	transition: .3s;
+	left: 50%;
+	top: 50%;
+}
+.reviews-i .rev-icon:hover img {
+	transform: scale(1.1);
+}
+.reviews-i .rev-icon img {
+	width: 70px;
+	height: 70px;
+}
+.reviews-i::before {
+	content: none;
+}
 .brends {
 	position: relative;
 }
