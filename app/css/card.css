@@ -35,7 +35,15 @@ a:hover{color: inherit}
 * Browsers: last 4 version
 */
 
-
+.brends {
+	position: relative;
+}
+.brends .brends-bg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
 .footer-list p a:hover {
 	color: #39BCFF;
 }
